@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./04Homework.css">
+</head>
+
+<!-- this is where the body begins  -->
+<body>
+
+    <img src="https://image.roku.com/blog/wp-content/uploads/2020/08/Twilight_Saga_FB.jpg" class="d-block w-100" alt="...">
+    <nav class="navbar bg-dark">
+        <button class="btn btn-primary btn-lg" id="scoresgo">High Scores</button>
+        <div class="btn btn-primary btn-lg" id="time-display">00</div> <div class="container" id="timer">
+    </nav>
+        <div class="row m-2">
+            <div class="col text-center">
+                <button class="btn btn-primary btn-lg" id="button1">Start Game</button> 
+                <button id="button5" class="btn btn-primary btn-lg">Submit Quiz</button> 
+            </div>
+            <div class="col-12" style="text-align: center;">
+                <h1>The Twilight Saga Quiz</h1>
+            </div>
+            <div class ="container" id="scores"> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <div class="row m-2">
+            <div class="col">
+                <p id="Display"></p>
+            </div>
+        </div>
+    </div>
+
+<body>
+
+<div class="container" id = "main">
+
+    <div class ="container" id="startbox">
+        <div class="row">
+        </div>   
+    </div>
+
+<!-- // Gets Link for Theme Song -->
+    <iframe width="260" height="215" src="https://www.youtube-nocookie.com/embed/aPNHG61FMok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="iframe" style="text-align: center;" style="iframe: center;"> 
+        <h3>Jam Out!</h3>
+<!--question 1-->
+
+    <div class="container" id="question1">
+     <form id="form1">
+        <h3>Are you Team Jacob or Team Edward?</h3>
+        <label for="var_1"><input type="radio" name="vari" value="0" id="var_1" />All Twlight Fans Are Welcome</label>
+        <label for="var_2"><input type="radio" name="vari" value="0" id="var_2" />Team Jacob</label>
+        <label for="var_3"><input type="radio" name="vari" value="20" id="var_3" />Team Edward</label>           
+    </form>
+    </div>
+
+<!--question 2-->
+
+    <div class="container" id = "question2">
+        <form id="form2">
+        <h3>Before moving to Forks, where did Bella live?</h3>
+            <label for="code_1"><input type="radio" name="code" value="0" id="code_1" />Atlanta</label>
+            <label for="code_2"><input type="radio" name="code" value="20" id="code_2" />Phoenix</label>
+            <label for="code_3"><input type="radio" name="code" value="0" id="code_3" />Los Angeles</label>
+        </form>
+    </div>
+
+<!--question 3-->
+
+    <div class="container" id = "question3">
+        <form id="form3">
+        <h3>What instrument does Edward play?</h3>
+            <label for="css_1"><input type="radio" name="css" value="0" id="css_1" />Drums</label>
+            <label for="css_2"><input type="radio" name="css" value="20" id="css_2" />Piano</label>
+            <label for="css_3"><input type="radio" name="css" value="0" id="css_3" />Guitar</label>
+        </form>
+    </div>
+
+
+<!--question 4-->
+
+    <div class="container" id = "question4">
+        <form id="form4">
+        <h3>What class did Bella and Edward take together Junior year?</h3>
+            <label for="jason_1"><input type="radio" name="jason" value="0" id="jason_1" />A.P. English</label>
+            <label for="jason_2"><input type="radio" name="jason" value="0" id="jason_2" />Biology</label>
+            <label for="jason_3"><input type="radio" name="jason" value="20" id="jason_3" />Spanish</label>
+        </form>
+    </div>
+
+<!--question 5-->
+
+    <div class="container" id = "question5">
+        <form id="form5">
+        <h3>Who drove the van that almost hits Bella??</h3>
+            <label for="tag_1"><input type="radio" name="tag" value="0" id="tag_1" />Mike</label>
+            <label for="tag_2"><input type="radio" name="tag" value="0" id="tag_2" />Tyler</label>
+            <label for="tag_3"><input type="radio" name="tag" value="20" id="tag_3" />Eri</label>
+        </form>
+    <!-- <button id="button5" class="btn">Submit Quiz</button> 
+    </div> -->
+    
+    
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <title>Try Again if you like Twilight!</title>
+
+
+<div class ="container" id ="lose">
+
+    <div class="container" id="lostimg">
+        <img src=assets/timeout.jpg>
+    </div>  
+
+    <div class ="container" id="quizlink"> 
+        <a class="btn btn-primary btn-lg" href="index.html">Try Again</a>
+    </div>  
+
+    <!-- div score-->
+
+<div class="container" id = "yourscore">
+    <h3>Final score!</h3>
+    <p>Your score is: <span id="score"> </span> %!</p>
+    <form id ="highscore" method ="POST">
+        <label for="nametext">Add Your Name To The Twilight List</label>
+        <input type="text" placeholder="Your Name:" name="nametext" id="nametext" />
+    </form>
+</div>
+
+    
+<div class ="container" id = "highscoresbox">
+    <div class ="container" id="quiz"> 
+        <button id="quizback" class="btn">Back to Quiz</button>
+    </div>
+
+    <div class="row" id="scoresheader">
+        <div class="col-12" style="text-align: center;">
+            <p><strong>Highscores</strong></p>         
+         </div>  
+    </div>
+    
+    <div class="scoreinfo">
+        <h1 style="text-align: center;">Players</h1>
+        <ul id="player-list"></ul>         
+    </div>
+
+</div>
+
+</div>
+
+
+    
+<!--javascript tag-->    
+  <script src="./04Homework.js"></script>
+<!--bootstrap tags-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
