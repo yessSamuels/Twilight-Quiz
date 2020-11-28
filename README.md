@@ -2,4 +2,5 @@
 // We have music for you to enjoy the test at it fullest. 
 
 
-Play by Pressign Start Game and clik on the next button to move to the next questions, enjoy the twilight saga vibe. 
+Play by pressing the start game button and move to the next questions. 
+
