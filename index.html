@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="./04Homework.css">
 </head>
 
-<!-- this is where the body begins  -->
 <body>
+   <!-- Body Begins Here  -->
 
     <img src="https://image.roku.com/blog/wp-content/uploads/2020/08/Twilight_Saga_FB.jpg" class="d-block w-100" alt="...">
+    
     <nav class="navbar bg-dark">
-        <button class="btn btn-primary btn-lg" id="scoresgo">High Scores</button>
+        <button class="btn btn-primary btn-lg" id="highscoresBtn">High Scores</button>
         <div class="btn btn-primary btn-lg" id="time-display">00</div> <div class="container" id="timer">
     </nav>
+        
         <div class="row m-2">
             <div class="col text-center">
                 <button class="btn btn-primary btn-lg" id="startBtn">Start Game</button> 
@@ -38,8 +40,6 @@
         </div>
     </div>
 
-<body>
-
 <div class="container" id = "main">
 
     <div class ="container" id="startbox">
@@ -47,40 +47,46 @@
         </div>   
     </div>
 
-<!-- // Gets Link for Theme Song -->
-    <iframe width="260" height="215" src="https://www.youtube-nocookie.com/embed/aPNHG61FMok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div class="iframe" style="text-align: center;" style="iframe: center;"> 
-        <h3>Jam Out!</h3>
-<!--question 1-->
 
-    <div class="container" id="question1">
-     <form id="form1">
+<!-- question 1 -->
+
+    <div class= "container" id= "question1">
+     <form id= "button1">
         <h3>Are you Team Jacob or Team Edward?</h3>
         <label for="var_1"><input type="radio" name="vari" value="0" id="var_1" />All Twlight Fans Are Welcome</label>
         <label for="var_2"><input type="radio" name="vari" value="0" id="var_2" />Team Jacob</label>
         <label for="var_3"><input type="radio" name="vari" value="20" id="var_3" />Team Edward</label>           
+    
+       <button>submit</button>
+    
     </form>
     </div>
 
-<!--question 2-->
 
-    <div class="container" id = "question2">
-        <form id="form2">
+
+    <div class= "container" id = "question2">
+        <form id="button2">
         <h3>Before moving to Forks, where did Bella live?</h3>
             <label for="code_1"><input type="radio" name="code" value="0" id="code_1" />Atlanta</label>
             <label for="code_2"><input type="radio" name="code" value="20" id="code_2" />Phoenix</label>
             <label for="code_3"><input type="radio" name="code" value="0" id="code_3" />Los Angeles</label>
+        
+          <button>submit</button>
+        
         </form>
     </div>
 
 <!--question 3-->
 
-    <div class="container" id = "question3">
-        <form id="form3">
+    <div class= "container" id = "question3">
+        <form id= "button3">
         <h3>What instrument does Edward play?</h3>
             <label for="css_1"><input type="radio" name="css" value="0" id="css_1" />Drums</label>
             <label for="css_2"><input type="radio" name="css" value="20" id="css_2" />Piano</label>
             <label for="css_3"><input type="radio" name="css" value="0" id="css_3" />Guitar</label>
+            
+            <button>submit</button>
+        
         </form>
     </div>
 
@@ -88,42 +94,40 @@
 <!--question 4-->
 
     <div class="container" id = "question4">
-        <form id="form4">
+        <form id="button4">
         <h3>What class did Bella and Edward take together Junior year?</h3>
             <label for="jason_1"><input type="radio" name="jason" value="0" id="jason_1" />A.P. English</label>
             <label for="jason_2"><input type="radio" name="jason" value="0" id="jason_2" />Biology</label>
             <label for="jason_3"><input type="radio" name="jason" value="20" id="jason_3" />Spanish</label>
+            
+            <button>submit</button>
+        
         </form>
     </div>
 
 <!--question 5-->
 
     <div class="container" id = "question5">
-        <form id="form5">
+        <form id="button5">
         <h3>Who drove the van that almost hits Bella??</h3>
             <label for="tag_1"><input type="radio" name="tag" value="0" id="tag_1" />Mike</label>
             <label for="tag_2"><input type="radio" name="tag" value="0" id="tag_2" />Tyler</label>
             <label for="tag_3"><input type="radio" name="tag" value="20" id="tag_3" />Eri</label>
-        </form>
-    <!-- <button id="button5" class="btn">Submit Quiz</button> 
-    </div> -->
-    
-    
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+            
+            <button>submit</button>
+        
+        </form> 
+    </div>
+
+<!-- div score--> 
+
     <title>Try Again if you like Twilight!</title>
 
-
-<div class ="container" id ="lose">
-
-    <div class="container" id="lostimg">
-        <img src=assets/timeout.jpg>
-    </div>  
+   <div class ="container" id ="lose">
 
     <div class ="container" id="quizlink"> 
         <a class="btn btn-primary btn-lg" href="index.html">Try Again</a>
     </div>  
-
-    <!-- div score-->
 
 <div class="container" id = "yourscore">
     <h3>Final score!</h3>
@@ -155,7 +159,9 @@
 
 </div>
 
-
+<!-- // Gets Link for Theme Song -->
+    <!-- <iframe width="260" height="215" src="https://www.youtube-nocookie.com/embed/aPNHG61FMok" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="iframe" style="text-align: center;" style="iframe: center;"><h3>Jam Out!</h3> -->
     
 <!--javascript tag-->    
   <script src="./04Homework.js"></script>

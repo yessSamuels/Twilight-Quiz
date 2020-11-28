@@ -18,7 +18,7 @@ var yourscore = document.querySelector("#yourscore");
 var nametext = document.querySelector("#nametext");
 var playerList = document.querySelector("#player-list");
 var highscoresBox = document.querySelector("#highscoresbox");
-var scoresgo = document.querySelector("#scoresgo");
+var scoresgo = document.querySelector("#highscoresBtn");
 var quizback = document.querySelector("#quizback");
 var scores = document.querySelector("#scores");
 var timer = document.querySelector("#timer");
@@ -32,13 +32,13 @@ var css = "";
 var jason = "";
 var tag = "";
 
-var sec = 15;
+var sec = 120;
 var time = "";
 
 // this is where functions begin ---> 
 
 function tryagain(){
-  location.replace("timeout.html");
+  location.replace("index.html");
 };
 
 
@@ -109,7 +109,7 @@ startBtn.addEventListener("click", function(event){
     myTimer();    
 });
 
-button1.addEventListener("click", function(event){
+button1.addEventListener("submit", function(event){
     event.preventDefault();
     vari = parseInt(document.querySelector('input[name = "vari"]:checked').value);
     console.log(vari);
@@ -118,43 +118,56 @@ button1.addEventListener("click", function(event){
     } else if (vari === 0) {
         sec--;
     }
+    question1.setAttribute("style", "display: none;");
+    question2.setAttribute("style", "display: block;");
 });
 
 button2.addEventListener("click", function(event){
     event.preventDefault();
-    code = parseInt(document.querySelector('input[name = "code"]:checked').value);
-    if (code > 0){
+    vari = parseInt(document.querySelector('input[name = "vari"]:checked').value);
+    console.log(vari);
+    if (vari > 0){
         sec++;
-    } else if (code === 0) {
+    } else if (vari === 0) {
         sec--;
     }
+    question2.setAttribute("style", "display: none;");
+    question3.setAttribute("style", "display: block;");
 });
 
 button3.addEventListener("click", function(event){
-    event.preventDefault();
-    css = parseInt(document.querySelector('input[name = "css"]:checked').value);    
-    if (css > 0){
-        sec++;
-    } else if (css === 0) {
-        sec--;
-    }
+  vari = parseInt(document.querySelector('input[name = "vari"]:checked').value);
+  console.log(vari);
+  if (vari > 0){
+      sec++;
+  } else if (vari === 0) {
+      sec--;
+  }
+    question3.setAttribute("style", "display: none;");
+    question4.setAttribute("style", "display: block;");
 });
 
 button4.addEventListener("click", function(event){
-    event.preventDefault();
-    jason = parseInt(document.querySelector('input[name = "jason"]:checked').value);    
-    console.log(jason);
-    if (jason > 0){
-        sec++;
-    } else if (jason === 0) {
-        sec--;
-    }  
+  vari = parseInt(document.querySelector('input[name = "vari"]:checked').value);
+  console.log(vari);
+  if (vari > 0){
+      sec++;
+  } else if (vari === 0) {
+      sec--;
+  }
+    question4.setAttribute("style", "display: none;");
+    question5.setAttribute("style", "display: block;"); 
 });
 
 button5.addEventListener("click", function(event){
-    event.preventDefault();    
-    tag = parseInt(document.querySelector('input[name = "tag"]:checked').value);
-    getScore();
+  vari = parseInt(document.querySelector('input[name = "vari"]:checked').value);
+  console.log(vari);
+  if (vari > 0){
+      sec++;
+  } else if (vari === 0) {
+      sec--;
+  }
+  question5.setAttribute("style", "display: none;");
 }); 
 
 scoresgo.addEventListener("click", function(event){
@@ -183,9 +196,7 @@ highscoreForm.addEventListener("submit", function(event) {
 saveScore();
 renderScore();
 
-// this is where arrays begin ---> 
-
-// this is where the functions begin ---> 
+// This is where functions begin //
 
 function hide(element) {
   element.style.display = "none";
