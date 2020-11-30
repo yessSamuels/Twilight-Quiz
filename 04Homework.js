@@ -1,5 +1,5 @@
 // querySelectors ----> // this is where variables begin --->
-
+var audioButton = document.querySelector("#audioButton");
 var startBox = document.querySelector("#startbox");
 var startBtn = document.querySelector("#startBtn");
 var question1 = document.querySelector("#question1");
@@ -98,7 +98,7 @@ function myTimer() {
   }, 1000); 
 };      
 
-// this is where event listeners begin ---> example for console log = console.log(" ");
+// This is where Button Questions Begin adding EventListener //
 
 getSaved();
 
